@@ -1,0 +1,17 @@
+{
+    "name": "Brave Search Extension (unofficial)",
+    "description": "This is an extension which makes your default search Brave Search",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {"48": "images/bravesearch48.png"},
+    "chrome_settings_overrides": {
+          "search_provider": {
+            "favicon_url": "https://search.brave.com/favicon.ico",
+            "encoding": "UTF-8",
+            "is_default": true,
+            "keyword": "search.brave.com",
+            "name": "Brave Search",
+            "search_url": "https://search.brave.com/search?q={searchTerms}"
+          }
+          }
+   }
