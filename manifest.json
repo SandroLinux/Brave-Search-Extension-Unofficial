@@ -3,15 +3,21 @@
     "description": "This is an extension which makes your default search Brave Search",
     "version": "1.0",
     "manifest_version": 2,
-    "icons": {"48": "images/bravesearch48.png"},
+    "icons": {"48": "images/bravesearch48.png", "256" : "images/bravesearch256.png"},
     "chrome_settings_overrides": {
           "search_provider": {
-            "favicon_url": "https://search.brave.com/favicon.ico",
+            "favicon_url": "https://cdn.search.brave.com/serp/v1/static/brand/d6a7857f7f3c2d5e1a55d27a8e25b39a31c4c5d093ff479aeb1b99d0faca5c71-favicon.ico",
             "encoding": "UTF-8",
             "is_default": true,
             "keyword": "search.brave.com",
             "name": "Brave Search",
             "search_url": "https://search.brave.com/search?q={searchTerms}"
           }
-          }
-   }
+          },
+      "browser_specific_settings": {
+        "gecko": {
+        "id": "bravesearch@sandrolinux.com",
+        "strict_min_version": "42.0"
+        }
+        }
+        }
